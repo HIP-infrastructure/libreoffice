@@ -19,7 +19,7 @@ WORKDIR /apps/${APP_NAME}
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install --no-install-recommends -y \ 
+    apt-get install -y \
     libreoffice && \
     apt-get autoremove -y --purge && \
     apt-get clean && \
